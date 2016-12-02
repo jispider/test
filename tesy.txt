@@ -48,6 +48,10 @@ namespace TEST2
         }
 
         cout << "Hello JIMMYSPIDER!!!!!!!!!!!!!!!!!!";
+<<<<<<< HEAD
 	//1
+=======
+        cout << "Hello JIMMYSPIDER!!!!!!!!!!!!!!!!!!";
+>>>>>>> 4148eb220306720fe74585b59c727fa2e63ded40
     }
 }
