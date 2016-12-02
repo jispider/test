@@ -29,24 +29,24 @@ namespace TEST2
 
         void Application_Idle(object sender, EventArgs e)
         {
-            Image<Bgr, Byte> frame = cap.QueryFrame(); // ¥hquery¸Óµe­±
-            pictureBox1.Image = frame.ToBitmap(); // §âµe­±Âà´«¦¨bitmap«¬ºA¡A¦bÁıµ¹pictureBox¤¸¥ó     
+            Image<Bgr, Byte> frame = cap.QueryFrame(); // å»queryè©²ç•«é¢
+            pictureBox1.Image = frame.ToBitmap(); // æŠŠç•«é¢è½‰æ›æˆbitmapå‹æ…‹ï¼Œåœ¨é¤µçµ¦pictureBoxå…ƒä»¶     
         }
         void Application_Idle2(object sender, EventArgs e)
         {
-            //Åª¨ú±m¦â¼v¹³
+            //è®€å–å½©è‰²å½±åƒ
             Image<Bgr, byte> colorImage = cap.QueryFrame(); 
-            //¨ú±o¦Ç¶¥¼v¹³
+            //å–å¾—ç°éšå½±åƒ
             Image<Gray, byte> grayImage = new Image<Gray, byte>(colorImage.Bitmap);
-            //¤G­È¤Æªº»Ö­È
+            //äºŒå€¼åŒ–çš„é–¥å€¼
             Gray thresholdValue = new Gray(127);
-            //¨ú±o¤G­È¤Æ¼v¹³
+            //å–å¾—äºŒå€¼åŒ–å½±åƒ
             Image<Gray, byte> thresholdImage = grayImage.ThresholdBinary(thresholdValue, new Gray(255));       
             //binarization
             pictureBox2.Image = thresholdImage.ToBitmap();
 
         }
 
-
+        cout << "Hello JIMMYSPIDER!!!!!!!!!!!!!!!!!!";
     }
 }
