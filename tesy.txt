@@ -50,5 +50,6 @@ namespace TEST2
         cout << "Hello JIMMYSPIDER!!!!!!!!!!!!!!!!!!";
 	//1
         cout << "Hello JIMMYSPIDER!!!!!!!!!!!!!!!!!!";
+	//2
     }
 }
